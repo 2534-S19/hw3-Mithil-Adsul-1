@@ -11,6 +11,7 @@ int main(void)
 
     // TODO: Declare the variables that main uses to interact with your state machine.
     unsigned int history = 0;
+    typedef enum {S1, S2} button_state;
 
     // Stops the Watchdog timer.
     initBoard();
@@ -229,8 +230,12 @@ void changeBoosterpackLED(unsigned int count)
 // The button state machine should return true or false to indicate a completed, debounced button press.
 bool fsmBoosterpackButtonS1(unsigned int buttonhistory)
 {
+
     bool pressed = false;
-//if down, then chsnge to up and return false
+
+
+    //if down, then chsnge to up and return false
+
 
     return pressed;
 }
